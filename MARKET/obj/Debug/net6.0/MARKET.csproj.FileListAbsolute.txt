@@ -1,0 +1,5 @@
+/Users/mertunal/Projects/MARKET/MARKET/obj/Debug/net6.0/MARKET.csproj.AssemblyReference.cache
+/Users/mertunal/Projects/MARKET/MARKET/obj/Debug/net6.0/MARKET.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mertunal/Projects/MARKET/MARKET/obj/Debug/net6.0/MARKET.AssemblyInfoInputs.cache
+/Users/mertunal/Projects/MARKET/MARKET/obj/Debug/net6.0/MARKET.AssemblyInfo.cs
+/Users/mertunal/Projects/MARKET/MARKET/obj/Debug/net6.0/MARKET.csproj.CoreCompileInputs.cache

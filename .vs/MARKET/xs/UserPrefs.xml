@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{CAB90722-9866-46F9-BA2F-ED5C79EFDFD6}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MARKET PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MARKET/MARKET-FİS.cs">
+    <Files>
+      <File FileName="MARKET/Program.cs" />
+      <File FileName="MARKET/MARKET-TEDARİKÇİ.cs" Line="16" Column="2" />
+      <File FileName="MARKET/MARKET_URUN.cs" Line="20" Column="2" />
+      <File FileName="MARKET/MARKET-FİS.cs" Line="17" Column="1" />
+      <File FileName="MARKET/MARKET-FATURA.cs" Line="8" Column="29" />
+      <File FileName="MARKET/MARKET_URUNTEDARİKCİ.cs" Line="15" Column="1" />
+      <File FileName="MARKET/MARKET_URUNFİSİ.cs" Line="3" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MARKET" expanded="True">
+            <Node name="MARKET" expanded="True">
+              <Node name="MARKET-FİS.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

@@ -20,6 +20,7 @@
 
   The database scheme of market automation is shown below : 
   
-![Bildschirmfoto 2023-02-12 um 23 42 38](https://user-images.githubusercontent.com/120198895/218336002-8319f6c2-9746-4251-9f07-afced9f199f4.png)
+![Bildschirmfoto 2023-02-12 um 23 43 48](https://user-images.githubusercontent.com/120198895/218336058-4cbf08b8-2840-4fd1-9a74-c9b58cd5617b.png)
+
 
   

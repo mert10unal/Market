@@ -22,24 +22,26 @@
   
 ![Bildschirmfoto 2023-03-18 um 16 04 00](https://user-images.githubusercontent.com/120198895/226108036-4c0cc56d-3ab9-462a-8601-a5a1cfaefb4a.png)
 
-Yaptığım tasarım doğrultusunda son kullanıcıların sorduğu bazı soruların sql kodları :
+In line with my design, sql codes of some questions asked by end users:
 
---Billnumber ‘3’ olan faturanın productları nelerdir
+--The products of the bill with billnumber '3'
+
 select *  from Bill,Supplier,SupplierProduct,Product
 where Bill.SupplierId=Supplier.Id
 and Supplier.Id=SupplierProduct.SupplierId
 and SupplierProduct.ProductId = Product.Id
 and BillNumber = '1234567887654321'
 
---▪ RecieptNumber ‘3’ e eşit olan recieptlerin product nameleri nedir
+--Product names of reciept whose RecieptNumber is equal to '3'
+
 select ProductName from Receipt,ProductReceipt,Product
 where Receipt.Id=ProductReceipt.ReceiptId
 and ProductReceipt.ProductId = Product.Id
 and ReceiptNumber = '4519840321452'
 
 
---RecieptNumber ‘3’ e eşit olan recieptlerin suplierlarının name ve tax
---numberı nedir.
+--The name and tax number of supliers of reciept with RecieptNumber equal to '3'
+
 select SupplierName,PhoneNumber from Receipt,ProductReceipt,Product,SupplierProduct,Supplier
 where Receipt.Id=ProductReceipt.ReceiptId
 and ProductReceipt.ProductId = Product.Id
@@ -47,16 +49,15 @@ and Product.Id=SupplierProduct.ProductId
 and SupplierProduct.SupplierId = SupplierId
 and ReceiptNumber = '3748192034185'
 
---Suplieer tax numberı ‘123’ (123 farazi) olan supplierların product price
---toplamları
+--Product price totals of suppliers with supplier tax number '123' 
+
 select SUM(Price) from Supplier,SupplierProduct,Product
 where Supplier.Id=SupplierProduct.SupplierId
 and SupplierProduct.ProductId = Product.Id
 and Supplier.TaxNumber = '32647'
 
+--Reciept unit price totals of suppliers with supplier tax number '123'
 
---Suplieer tax numberı ‘123’ (123 farazi) olan supplierların Reciept unit
---price toplamları
 select SUM(UnitPrice) from Receipt,ProductReceipt,Product,SupplierProduct
 where Receipt.Id=ProductReceipt.ReceiptId
 and Product.Id=ProductReceipt.ProductId
@@ -64,8 +65,10 @@ and SupplierProduct.SupplierId = Supplier.Id
 and Product.Id=SupplierProduct.ProductId
 and Supplier.TaxNumber = '71628'
 
---Suplieer tax numberı ‘123’ (123 farazi) olan supplierların product pricelerinden en yüksek olanın tüm kolonları
-select Product.Id,Product.ProductName,Product.Barcode,Product.Brand,Product.Price,Product.Quantity,Product.MeasurePrice 
+--All columns of the highest of the product prices of suppliers with supplier tax number '123'
+
+select Product.Id,Product.ProductName,Product.Barcode,Product.Brand,Product.Price,Product.Quantity,
+Product.MeasurePrice 
 from Supplier,SupplierProduct,Product
 where Supplier.Id=SupplierProduct.SupplierId
 and SupplierProduct.ProductId=Product.Id
